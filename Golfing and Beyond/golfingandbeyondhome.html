@@ -7,158 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  
-
-<style>
-
-
-
-
-
-
-        /* Inline CSS to replicate the PDF design */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
-        .navbar {
-            background-color: #343a40;
-
-        }
-        .navbar a {
-            color: white !important;
-            margin: 0 15px;
-        }
-
-        a:hover{
-            color: burlywood !important;
-        }
-
-        .hero-section {
-            background-color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        .hero-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .hero-section p {
-            font-size: 1.2rem;
-            color: #6c757d;
-        }
-        .subscribe-section {
-            background-color: #007bff;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 30px;
-        }
-        .news-list {
-            padding: 20px;
-        }
-        .news-item {
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 20px;
-        }
-        .cta-button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-transform: uppercase;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .cta-button:hover {
-            background-color: #218838;
-        }
-
-        .carousel-item {
-            height: 770px; /* Set a fixed height for the carousel */
-        }
-        
-        .carousel-item img {
-            height: 100%; /* Make the image fill the carousel item height */
-            object-fit: cover; /* Maintain aspect ratio while covering the entire area */
-        }
-
-
-
-        .contact {
-            background: url(Golf.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .contact_box {
-            background-color: var(--cs-wh);
-            width: 90%;
-            margin: auto;
-            padding: 40px;
-        }
-        
-        /* .footer {
-            padding-top: 50px;
-            background-color: #282828;
-            color: #f5f5f5;
-        } */
-
-        .finfo {
-            text-align: center;
-        }
-
-        .sinfo {
-            display: flex;
-            justify-content: space-evenly;
-            margin: 15px;
-        }
-
-
-        .footer {
-            background-color: #1c1c1e;
-            padding: 40px 0;
-            color: #fff;
-        }
-        .footer .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .footer .list-unstyled a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .footer .list-unstyled a:hover {
-            text-decoration: underline;
-        }
-        .footer .input-group {
-            max-width: 400px;
-        }
-        .footer .input-group input {
-            border-radius: 0;
-        }
-        .footer .input-group .btn {
-            border-radius: 0;
-            background-color: #007bff;
-            color: #fff;
-        }
-        .footer .small-text {
-            font-size: 0.85rem;
-            color: #7a7a7a;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
     <div style="background-color:rgb(79, 72, 72); color: white; text-align: center; margin-top: 0px; position: relative;">
-        <img style="height: 75px; position: relative; z-index: 1;" src="golf-logo-featured-image.png" alt="Golfing">
+        <img src="static/golf-and-beyond-logo.png" style="width: 100px; height: 100px; justify-content: center; align-items: center; z-index: 0;" alt="Logo">
+
+        <!-- <img style="height: 75px; position: relative; z-index: 1;" src="static/golf-logo-featured-image.png" alt="Golfing">
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 0;">
-            <span style="font-size: 24px;">Golfing    &    Beyond</span>
-        </div>
+            <span style="font-size: 24px;">Golfing & Beyond</span>
+        </div> -->
     </div>
+
+    
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -169,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Instruction</a></li>
+                <li class="nav-item"><a class="nav-link" href="instruction.html">Instruction</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Lifestyle</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Health & Fitness</a></li>
@@ -197,13 +58,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Golfmain.jpg" alt="First slide">
+                <img class="d-block w-100" src="static/Golfmain.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Golf1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="static/Golf1.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Golf2.jpg" alt="Third slide">
+                <img class="d-block w-100" src="static/golf-field.png" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -217,43 +78,230 @@
     </div>
 
 
-
-    <!-- Latest News Section -->
-    <div class="container news-list">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="news-item">
-                    <h2>Why Your Golf Swing is So Inconsistent</h2>
-                    <p>How to fix it and improve your game. Tips and tricks from professionals.</p>
+    <!-- News Section small boxes-->
+    <section class="news-section1">
+        <div class="container">
+            <div class="row">
+                <!-- News Box 1 -->
+                <div class="col-lg-4 col-md-6 news-box1 d-flex align-items-center">
+                    <img src="static/newsimages.jpg" alt="News Image" class="img-fluid news-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
                 </div>
-                <div class="news-item">
-                    <h2>Tips for Improving Your Golf Swing</h2>
-                    <p>Simple adjustments that can drastically enhance your swing.</p>
+                <!-- News Box 2 -->
+                <div class="col-lg-4 col-md-6 news-box1 d-flex align-items-center">
+                    <img src="static/Golf news.jpg" alt="News Image" class="img-fluid news-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
                 </div>
-                <div class="news-item">
-                    <h2>Upcoming Tournaments to Watch</h2>
-                    <p>Stay updated with the latest golf tournaments happening globally.</p>
+                <!-- News Box 3 -->
+                <div class="col-lg-4 col-md-6 news-box1 d-flex align-items-center">
+                    <img src="static/news2.png" alt="News Image" class="img-fluid news-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="col-md-4">
-                <!-- Call to Action Section -->
-                <div class="subscribe-section">
-                    <h2>Subscribe to Golfing Beyond</h2>
-                    <p>Get daily news delivered straight to your inbox!</p>
-                    <input type="email" class="form-control mb-3" placeholder="Enter your email">
-                    <a href="#" class="btn btn-success">Subscribe Now</a>
-                </div>
+
+    <!-- section-1 -->
+    <div class="header">
+        Golfing All News
+    </div>
+
+    <div class="container s1">
+        <!-- Main Content -->
+        <div class="main-content">
+            <img src="static/newsimages.jpg" alt="Golfing image">
+            <h2>Why Your Golf Swing is So Inconsistent How to Fix</h2>
+            <p>Why Your Golf Swing is So Inconsistent How to Fix Why Your Golf Swing is So Inconsistent How to Fix</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div>
+                <img src="static/newsimage2.jpg" alt="Placeholder">
+                <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+            </div>
+            <div>
+                <img src="static/newsimage3.jpg" alt="Placeholder">
+                <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+            </div>
+            <div>
+                <img src="static/Golf news.jpg" alt="Placeholder">
+                <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+            </div>
+            <div>
+                <img src="static/news2.png" alt="Placeholder">
+                <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
             </div>
         </div>
     </div>
 
 
+<!-- section2 -->
+    <section class="news-title-section1">
+        <div class="container text-center">
+            <div class="title-box1">
+                <h2>Heighlights</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="row justify-content-center">
+<marquee behavior="scroll" direction="left">
+    <div class="col-md-4 news-box">
+        <img src="static/person.jpg" alt="News Image" class="img-fluid">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
+    </div>
+</marquee>
+ 
+            </div>
+        </div>
+    </section>
+
+    <!-- News Title Section -->
+    <section class="news-title-section">
+        <div class="container text-center">
+            <div class="title-box">
+                <h2>Executive Members</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="row">
+                <!-- Top Card (Full Width) -->
+                <div class="col-12 news-box d-flex align-items-center">
+                    <img src="static/person.jpg" alt="News Image" class="img-fluid news-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer adipiscingctetuer adipiscing.</p>
+                </div>
+            </div>
+
+            <div style="align-items: center; justify-content: center;" class="row">
+                <!-- Bottom Cards (Three in a Row) -->
+                <div class="col-lg-6 col-md-4 news-box1 d-flex align-items-center">
+                    <img src="static/person.jpg" alt="News Image" class="img-fluid news-image1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-4 news-box1 d-flex align-items-center">
+                    <img src="static/person.jpg" alt="News Image" class="img-fluid news-image1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-4 news-box1 d-flex align-items-center">
+                    <img src="static/person.jpg" alt="News Image" class="img-fluid news-image1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-4 news-box1 d-flex align-items-center">
+                    <img src="static/person.jpg" alt="News Image" class="img-fluid news-image1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing cteuter adipiscingctetuer adipiscingctetuer.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- Video Section -->
+
+<div class="latest-header">
+    LATEST FROM GOLFING BEYOND
+</div>
+
+<div class="video-section">
+    <div class="videos">
+        <!-- Video 1 -->
+        <div class="video-card">
+            <video controls>
+                <source src="https://youtu.be/Vt9XFublRSY?si=kkO790wziJ9ct_qa" type="youtube">
+                Your browser does not support the video tag.
+            </video>
+            <p>Mastering Your Golf Swing</p>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <video controls>
+                <source src="golf-video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Fixing Inconsistent Golf Shots</p>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <video controls>
+                <source src="golf-video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Golf Tips for Beginners</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="latest-header">
+        LATEST FROM GOLFING BEYOND
+    </div>
+
+    <div class="container latest-container">
+        <div class="latest-news-cards">
+            <!-- Card 1 -->
+            <div class="card latest-card">
+                <img src="static/newsimage3.jpg" alt="Golfing News">
+                <div class="latest-card-content">
+                    <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+                    <div class="date">Aug 08, 2024</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card latest-card">
+                <img src="static/newsimage3.jpg" alt="Golfing News">
+                <div class="latest-card-content">
+                    <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+                    <div class="date">Aug 08, 2024</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card latest-card">
+                <img src="static/newsimage3.jpg" alt="Golfing News">
+                <div class="latest-card-content">
+                    <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+                    <div class="date">Aug 08, 2024</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card latest-card">
+                <img src="static/newsimage3.jpg" alt="Golfing News">
+                <div class="latest-card-content">
+                    <p>Why Your Golf Swing is So Inconsistent How to Fix</p>
+                    <div class="date">Aug 08, 2024</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-news text-center">
+            <br>
+            <a class="more" href="#">More News</a>
+        </div>
+    </div>
+
 
         <!-- footer -->
         <div class="footer" id="footer">
             <a  class="btn" id="back2Top" title="Back to top" href="#" style="float: right; margin-right: 1%;">
-                <img style="height: 55px; width: 50px;" src="B2T1.png" alt="Back to Top">
+                <img style="height: 55px; width: 50px;" src="static/B2T1.png" alt="Back to Top">
                 <br>Back to Top
             </a>
             <div class="container">
@@ -306,7 +354,7 @@
                         <h4>
                             Golf is about how well you accept, respond to and score with your misses much more so than it is a game of your perfect shots
                         </h4>
-                        <a href="reservation.html" class="btn btn-menu btn-footer">Book A Schedule</a>
+                        <a href="#" class="btn btn-danger">Book A Schedule</a>
                     </div>
 
                 </div>
@@ -314,8 +362,6 @@
         </div>
     
     
-        
-
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -323,7 +369,7 @@
                     <div class="col-md-3">
                         <div class="logo">
                             <div style="position: relative;">
-                                <i><img style="height: 60px;" src="golf-logo-featured-image.png" alt=""></i>
+                                <i><img style="height: 60px;" src="static/golf-logo-featured-image.png" alt=""></i>
                             </div>
                             <div style="position: relative;">
                                 Golfing & Beyond                                
