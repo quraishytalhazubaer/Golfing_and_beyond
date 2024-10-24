@@ -207,24 +207,40 @@ table, th, td {
 }
 
 
+/* News Section Styling */
 .news-section {
     background-color: #3a3a3a; /* Dark gray background */
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .news-box {
-    background-color: #6F8FAF; /* Mustard yellow */
+    background-color: #6F8FAF; /* Light blue */
     padding: 20px;
-    margin: 10px;
-    text-align: center;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 10px;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
+
 .news-box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+
+/* Optional: Add styling for the marquee scroll */
+marquee {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 .news-title-section {
     background-color: #f4f4f4;
@@ -232,19 +248,28 @@ table, th, td {
 }
 
 .title-box {
-    background-color: #6495ED; /* Mustard yellow */
     padding: 10px 20px;
     display: inline-block;
+    background-color: #6495ED; /* Blue */
     border-radius: 5px;
 }
 
 .title-box h2 {
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
-    background-color: #4b4b4b; /* Dark gray for text background */
-    padding: 10px 20px;
-    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .news-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .news-box img {
+        margin-bottom: 10px;
+    }
 }
 
 
