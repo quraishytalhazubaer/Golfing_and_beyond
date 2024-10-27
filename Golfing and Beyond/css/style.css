@@ -16,22 +16,64 @@ body {
     margin: 0 15px;
 }
 
+
+
+/* Custom dropdown styling */
+.navbar .dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border: none; /* Remove white border */
+}
+
+.navbar .dropdown-item {
+    color: #ffffff;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #495057; /* Slightly lighter dark on hover */
+}
+
+
+
 a:hover {
     color: burlywood !important;
 }
+
+
 .hero-section {
-    background-color: white;
+    background-color: #d7e3cc;
     padding: 40px;
-    text-align: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+
+.hero-section h1{
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.hero-section p {
-    font-size: 1.2rem;
-    color: #6c757d;
+
+.quote-text {
+    position: relative;
+    font-size: 1.5rem;
+    color: black;
+    width: 50%;
 }
+
+.quote-text::before,
+.quote-text::after {
+    font-size: 2.75rem; /* Adjust size for emphasis */
+    color: black;
+    font-weight: bold;
+}
+
+
+.hero-section img {
+    width: 45%; /* Adjust width as necessary */
+    height: 400px;
+}
+
+
 .subscribe-section {
     background-color: #007bff;
     color: white;
@@ -39,6 +81,7 @@ a:hover {
     text-align: center;
     margin-top: 30px;
 }
+
 .news-list {
     padding: 20px;
 }
@@ -559,18 +602,59 @@ marquee {
 
 
 
-.most-read-points{
+/* .most-read-points{
     flex: 3;
     margin: 50px;
+    height: 600px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+.most-read-points img{
+    height: 125px;
+    width: 245px;
+    border-radius: 10px;
+    margin: 15px
+}*/
+
 .most-read-points h1{
     color: #218838;
     margin: 0;
-    float: left;
+} 
+
+.most-read-points {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    gap: 20px; /* Adjust the space between columns */
 }
 
+.column {
+    width: 48%; /* Make columns occupy equal width */
+}
+
+.column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 15px;
+
+}
+
+.news-item img {
+    width: 280px; /* Adjust size as needed */
+    height: 180px;
+    margin-right: 10px;
+}
+
+.news-item p {
+    font-size: 2rem;
+    color: #555;
+}
 
 
 
