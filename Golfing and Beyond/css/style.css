@@ -11,33 +11,29 @@ body {
     background-color: #343a40;
 }
 
-.navbar a {
+.navbar-brand{
+    font-size: 50px;
+}
+
+.nav-link {
     color: white !important;
-    margin: 0 15px;
+    font-size: 22px;
+    padding: 5px;
+    margin-right: 10px;
 }
-
-
-
-/* Custom dropdown styling */
-.navbar .dropdown-menu {
-    background-color: #343a40; /* Dark background */
-    border: none; /* Remove white border */
-}
-
-.navbar .dropdown-item {
-    color: #ffffff;
-}
-
-.navbar .dropdown-item:hover {
-    background-color: #495057; /* Slightly lighter dark on hover */
-}
-
 
 
 a:hover {
     color: burlywood !important;
 }
 
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-menu a{
+    color: white;
+}
 
 .hero-section {
     background-color: #d7e3cc;
@@ -85,10 +81,7 @@ a:hover {
 .news-list {
     padding: 20px;
 }
-.news-item {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-}
+
 .cta-button {
     background-color: #28a745;
     color: white;
@@ -397,7 +390,7 @@ marquee {
     color: #006600;
     font-size: 32px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
@@ -646,7 +639,7 @@ marquee {
 }
 
 .news-item img {
-    width: 280px; /* Adjust size as needed */
+    width: 280px;
     height: 180px;
     margin-right: 10px;
 }
@@ -695,7 +688,6 @@ marquee {
 
 
 /* executive members */
-
 .container-executive {
     display: flex;
     place-items: center;
