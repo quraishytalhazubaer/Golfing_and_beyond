@@ -12,7 +12,7 @@ body {
 }
 
 .navbar-brand{
-    font-size: 50px;
+    margin-left: 30px;
 }
 
 .nav-link {
@@ -328,7 +328,7 @@ marquee {
 
 
 .news-section1 {
-    background-color: #b6cde6; /* Dark gray background */
+    background-color: #b6cde6; 
     padding: 20px 0;
     justify-content: space-evenly;
 }
@@ -360,7 +360,7 @@ marquee {
 }
 
 .title-box1 {
-    background-color: #6495ED; /* Mustard yellow */
+    background-color: #6495ED; 
     padding: 10px 20px;
     display: inline-block;
     border-radius: 5px;
@@ -742,3 +742,38 @@ marquee {
     margin-top: 0;
     margin-left: 200px;
   }
+
+
+
+  /* golf news page */
+.r1-img{
+    width: 100%;
+    height: 75%;
+    border-radius: 2px;
+    object-fit: cover;
+
+}
+
+.m-img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+
+}
+
+.r3-img{
+    width: 100%;
+    height: 75%;
+    border-radius: 3px;
+    object-fit: cover;
+
+}
+
+.box{
+    margin-left: 20px;
+}
+
+
+.golfcontainer{
+margin-top: 30px;
+}
